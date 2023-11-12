@@ -1,92 +1,120 @@
 * {
+    /* Box-sizing: border-box tells browser to account for any border and padding in the values specified for an element's width and height */
     box-sizing: border-box;
+    /* Sets padding on all sides to 0 */
     padding: 0;
+    /* Sets margin to 0 */
     margin: 0;
 }
 
 body {
+    /* Uses hex code #d9dcd6 to define color of body background */
     background-color: #d9dcd6;
 }
 
 .header {
+    /* Sets padding on all sides of header to 20px */
     padding: 20px;
+    /* Font-family specifies list of alternative fonts, from highest priority to lowest */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
 .header h1 {
+    /* Sets the <span> of h1 to an inline-level element */
     display: inline-block;
+    /* Sets h1 font-size to 48px */
     font-size: 48px;
 }
 
 .header h1 .seo {
+    /* Sets color of <span> of h1 to hex code d9dcd6 */
     color: #d9dcd6;
 }
-
+/* nav is a child element of parent element header */
 .header nav {
-    padding-top: 15px;
+    /* Adds padding to the top of nav element 15px from parent container or header */
+    padding-top: 15px;    
+    /* Sets nav element with right of margin 20 px from parent container or header */
     margin-right: 20px;
+    /* Nav element is taken out of normal flow of document and floated to right edge of parent container or header */
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* ul is a child element of parent element nav */
 .header nav ul {
+    /* Sets marker of unordered list item element to none */
     list-style-type: none;
 }
-
+/* li is a child element of parent element ul */
 .header nav ul li {
+    /* Display: inline block sets list items to block boxes that are flowed with surrounding content */
     display: inline-block;
+    /* Sets margin of each list item 25px from the left of each neighbor element */
     margin-left: 25px;
 }
-
+/* Anchor element represent hyperlink of each li */
 a {
     color: #ffffff;
+    /* Sets appearance of decorative lines in text to none */
     text-decoration: none;
 }
 
 p {
+    /* Sets font size of each paragraph to 16px */
     font-size: 16px;
 }
 
 .hero {
+    /* Sets figure element to content area height of 800 px, width of containing block to 100%, and bottom of margin 25px from neighbor elements */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
+    /* Sets background-image from url on figure element */
     background-image: url("../images/digital-marketing-meeting.jpg");
+    /* Background-size: cover scales image to smallest possible size to fill the container leaving no empty space */
     background-size: cover;
+    /* Centers initial position for background-image */
     background-position: center;
 }
 
 .float-left {
+    /* Search-engine-optimization jpg is floated to left edge of parent container with right of margin 25px from neighbor elements */
     float: left;
     margin-right: 25px;
 }
 
 .float-right {
+    /* Online-reputation-management jpg is floated to right edge of parent container with left of margin 25px from neighbor elements */
     float: right;
     margin-left: 25px;
 }
 
 .content {
+    /* Sets Main element with a width of containing block to 75%, inline-blocks, and left of margin 20px from neighbor elements */
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
 .benefits {
+    /* Sets Aside element with the right of margin 20px from neighbor elements, padding on all sides to 20px, width of containing block to 20%, and containing block's height to 100% */
     margin-right: 20px;
     padding: 20px;
+    /* Aside element is moved down to clear past both left and right floats */
     clear: both;
+    /* Aside element is floated to right edge of parent container */
     float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/* Sections within Aside element */
 .benefit-lead, .benefit-brand, .benefit-cost {
+    /* Sections are set with bottom of margin 32px from neighbor elements and hex code #ffffff to define color */
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -102,7 +130,9 @@ p {
 } */
 
 .benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
+    /* H3 elements are set with bottom of margin 10px from parent container */
     margin-bottom: 10px;
+    /* Inline contents are centered with the linebox */
     text-align: center;
 }
 
@@ -115,10 +145,13 @@ p {
     margin-bottom: 10px;
     text-align: center;
 } */
-
+/* Images within Aside element */
 .benefit-lead img, .benefit-brand img, .benefit-cost img {
+    /* Img elements generate block boxes, generating line breaks before and after the elements when in normal flow */
     display: block;
+    /* Sets top and bottom margins to 10px.  Auto centers elements */
     margin: 10px auto;
+    /* Sets max-width of img elements to absolute value of 150px */
     max-width: 150px;
 }
 
@@ -133,13 +166,16 @@ p {
     margin: 10px auto;
     max-width: 150px;
 } */
-
+/* Sections within Main element */
 .search-engine-optimization, .online-reputation-management, .social-media-marketing {
+    /* Section elements set with bottom of margin 20px from neighbor elements, padding on all sides to 50px, and content area height to 300px */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Background-color of Section elements hex code #0072bb */
     background-color: #0072bb;
+    /* Color of text hex code #ffffff */
     color: #ffffff;
 }
 
@@ -160,8 +196,9 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 } */
-
+/* Images within Main element */
 .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
+    /* Sets max-height of img elements to absolute value of 200px */
     max-height: 200px;
 }
 
@@ -174,6 +211,7 @@ p {
 } */
 
 .search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
+    /* H2 elements set with bottom of margin 20px from parent container and font-size of 36px */
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -189,12 +227,16 @@ p {
 } */
 
 .footer {
+    /* Footer set with padding on all sides to 30px.  Element is moved down to clear past both left and right floats */
     padding: 30px;
     clear: both;
+    /* Font-family specifies list of alternative fonts, from highest priority to lowest */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Inline contents are centered with the linebox */
     text-align: center;
 }
 
 .footer h2 {
+    /* Sets H2 font-size to 20px */
     font-size: 20px;
 }
