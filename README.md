@@ -12,6 +12,10 @@ Looking at the website, all links will work with the same intuitive display from
 Attached is a screenshot of the webpage:
 ![Marketing-Refactor-01](Develop/assets/images/01-html-css-git-homework-demo.png)
 
+## Deployed Site
+
+[Deployed Site](https://tyler-kd.github.io/Marketing-Refactor-01/)
+
 ## Credits
 
 Followed tutorial lessons:
