@@ -232,7 +232,7 @@ p {
     clear: both;
     /* Font-family specifies list of alternative fonts, from highest priority to lowest */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* Inline contents are centered with the linebox */
+    /* Inline contents centered with the linebox */
     text-align: center;
 }
 
